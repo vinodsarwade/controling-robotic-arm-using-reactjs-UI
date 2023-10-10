@@ -11,3 +11,88 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 20px;
+  /* Adjust the gap as needed */
+  /* align-self: flex-start; */
+}
+
+.top-btns{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-top: 40px;
+}
+
+@media screen and (max-width:768px) {
+  .top-btns{
+    flex-direction: column;
+  }
+
+  .bottom-btns{
+    flex-direction: column;
+    margin-bottom: 80px;
+  }
+}
+
+.btn-holder{
+  display: flex;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  /* border: 1px solid black; */
+  flex-direction: column;
+
+}
+
+.top{
+  width: 100%;
+  height: 33%;
+}
+
+.middle{
+  width: 100%;
+  height: 33%;
+  /* border: 1px solid pink; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom{
+  height: 33%;
+  width: 100%;
+}
+
+.bottom-btns{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  margin-top: 40px;
+}
+
+.gripper-buttons{
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.btn-left{
+  background-color: aquamarine;
+  color: rgb(46, 43, 43);
+  padding: 8px 16px;
+}
+
+.btn-right{
+  background-color: rgb(13, 102, 211);
+  color: rgb(255, 255, 255);
+  padding: 8px 16px;
+}
